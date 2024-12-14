@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: aqua;">
+
+<header style="background-color: greenyellow; color: white; text-align: center; padding: 20px;">
+    <h1> Malcom Lismore<br>Photography Website</h1>
+</header>
+
+<nav style="background-color: red; padding: 10px; text-align: center;">
+    <a href="Homepage.html" style="color: yellow; text-decoration: none; margin: 0 15px;">Home</a>
+    <a href="portfolio.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Landscape Photography</a>
+    <a href="Wedding.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Wedding Photography</a>
+    <a href="Wildlife.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Wildlife Photography</a>
+    <a href="specialevent.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Special Event Photgraphy</a>
+    <a href="about.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">About Us</a>
+    <a href="contact.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Contact</a>
+    <a href="signup.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Signup</a>
+    <a href="enquiryform.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Make an Enquiry</a>
+    <a href="adminlogin.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Admin Login</a>
+    <a href="photo.html" style="color: yellow; text-decoration: none; padding: 0 1rem;"> Photo</a>
+</nav>
+
+<div style="text-align: center; margin-top: 50px;">
+    <h2>Admin Login</h2>
+    <form id="admin-login-form">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+// javascript code
+<script>
+    document.getElementById('admin-login-form').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username.trim() !== "admin1" || password !== "admin123@!") {
+            alert("Invalid username or password");
+        } else {
+            // Redirect to admin panel page
+            window.location.href = "admin_panel.html";
+        }
+    });
+</script>
+
+</body>
+</html>

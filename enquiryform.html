@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Enquiry Form</title>
+</head>
+
+    <body style=" font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: aqua;">
+
+        <header style="background-color: greenyellow; color: white; text-align: center; padding: 20px;">
+            <h1> Malcom Lismore<br>Photography Website</h1>
+        </header>
+    
+        <nav style="background-color: red; padding: 10px; text-align: center;">
+            <a href="Homepage.html" style="color: yellow; text-decoration: none; margin: 0 15px;">Home</a>
+            <a href="portfolio.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Landscape Photography</a>
+            <a href="Wedding.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Wedding Photgraphy</a>
+            <a href="Wildlife.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Wildlife Photgraphy</a>
+            <a href="specialevent.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Special Event Photgraphy</a>
+            <a href="about.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">About Us</a>
+            <a href="contact.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Contact</a>
+            <a href="signup.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Signup</a>
+            <a href="enquiryform.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Make a Enquiry</a>
+            <a href="adminlogin.html" style="color: yellow; text-decoration: none; padding: 0 1rem;">Admin Login</a>
+            <a href="photo.html" style="color: yellow; text-decoration: none; padding: 0 1rem;"> Photo</a>
+        </nav>
+        <br>
+    <h2>Enquiry Form</h2>
+    <form action="submit_enquiry.php" method="post">
+        <label for="contact_details">Contact Details:</label><br>
+        <input type="text" id="contact_details" name="contact_details" required><br><br>
+
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="enquiry_ID">Enquiry ID:</label><br>
+        <input type="text" id="enquiry_ID" name="enquiry_ID" required><br><br>
+
+        <label for="user_ID">User ID:</label><br>
+        <input type="text" id="user_ID" name="user_ID" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
